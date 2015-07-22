@@ -12,6 +12,13 @@
 		019FF5D91B5F716F007CB351 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019FF5D81B5F716F007CB351 /* Images.xcassets */; };
 		019FF5DC1B5F716F007CB351 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 019FF5DA1B5F716F007CB351 /* MainMenu.xib */; };
 		019FF5E81B5F7170007CB351 /* CDSubcalssingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019FF5E71B5F7170007CB351 /* CDSubcalssingTests.swift */; };
+		019FF5F11B5F717B007CB351 /* CDSubcalssing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 019FF5D51B5F716F007CB351 /* CDSubcalssing.xcdatamodeld */; };
+		019FF5F51B5F71B5007CB351 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019FF5F41B5F71B5007CB351 /* Account.swift */; };
+		019FF5F61B5F71B5007CB351 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019FF5F41B5F71B5007CB351 /* Account.swift */; };
+		019FF5F81B5F71C5007CB351 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019FF5F71B5F71C5007CB351 /* AccountModel.swift */; };
+		019FF5F91B5F71C5007CB351 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019FF5F71B5F71C5007CB351 /* AccountModel.swift */; };
+		019FF5FC1B5F71D6007CB351 /* CoreDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019FF5FA1B5F71D6007CB351 /* CoreDataTestCase.swift */; };
+		019FF5FF1B5F720D007CB351 /* AccountModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019FF5FE1B5F720D007CB351 /* AccountModelTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,10 @@
 		019FF5E11B5F7170007CB351 /* CDSubcalssingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDSubcalssingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		019FF5E61B5F7170007CB351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		019FF5E71B5F7170007CB351 /* CDSubcalssingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDSubcalssingTests.swift; sourceTree = "<group>"; };
+		019FF5F41B5F71B5007CB351 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Account.swift; path = generated/Account.swift; sourceTree = "<group>"; };
+		019FF5F71B5F71C5007CB351 /* AccountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		019FF5FA1B5F71D6007CB351 /* CoreDataTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTestCase.swift; sourceTree = "<group>"; };
+		019FF5FE1B5F720D007CB351 /* AccountModelTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountModelTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +86,8 @@
 		019FF5D01B5F716F007CB351 /* CDSubcalssing */ = {
 			isa = PBXGroup;
 			children = (
+				019FF5F21B5F718D007CB351 /* generated */,
+				019FF5F31B5F7196007CB351 /* subclasses */,
 				019FF5D31B5F716F007CB351 /* AppDelegate.swift */,
 				019FF5D81B5F716F007CB351 /* Images.xcassets */,
 				019FF5DA1B5F716F007CB351 /* MainMenu.xib */,
@@ -95,6 +108,8 @@
 		019FF5E41B5F7170007CB351 /* CDSubcalssingTests */ = {
 			isa = PBXGroup;
 			children = (
+				019FF5FD1B5F71FF007CB351 /* subclassing */,
+				019FF5FA1B5F71D6007CB351 /* CoreDataTestCase.swift */,
 				019FF5E71B5F7170007CB351 /* CDSubcalssingTests.swift */,
 				019FF5E51B5F7170007CB351 /* Supporting Files */,
 			);
@@ -107,6 +122,30 @@
 				019FF5E61B5F7170007CB351 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		019FF5F21B5F718D007CB351 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				019FF5F41B5F71B5007CB351 /* Account.swift */,
+			);
+			name = generated;
+			sourceTree = "<group>";
+		};
+		019FF5F31B5F7196007CB351 /* subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				019FF5F71B5F71C5007CB351 /* AccountModel.swift */,
+			);
+			name = subclasses;
+			sourceTree = "<group>";
+		};
+		019FF5FD1B5F71FF007CB351 /* subclassing */ = {
+			isa = PBXGroup;
+			children = (
+				019FF5FE1B5F720D007CB351 /* AccountModelTestCase.swift */,
+			);
+			name = subclassing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +249,8 @@
 			files = (
 				019FF5D41B5F716F007CB351 /* AppDelegate.swift in Sources */,
 				019FF5D71B5F716F007CB351 /* CDSubcalssing.xcdatamodeld in Sources */,
+				019FF5F51B5F71B5007CB351 /* Account.swift in Sources */,
+				019FF5F81B5F71C5007CB351 /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				019FF5E81B5F7170007CB351 /* CDSubcalssingTests.swift in Sources */,
+				019FF5FF1B5F720D007CB351 /* AccountModelTestCase.swift in Sources */,
+				019FF5F11B5F717B007CB351 /* CDSubcalssing.xcdatamodeld in Sources */,
+				019FF5F61B5F71B5007CB351 /* Account.swift in Sources */,
+				019FF5FC1B5F71D6007CB351 /* CoreDataTestCase.swift in Sources */,
+				019FF5F91B5F71C5007CB351 /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
